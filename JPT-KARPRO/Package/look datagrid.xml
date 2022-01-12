@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridGroupingLookAndFeel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TableOptions>
+    <SelectionBackColor>Maroon</SelectionBackColor>
+    <SelectionTextColor>HighlightText</SelectionTextColor>
+    <ColumnsMaxLengthStrategy>None</ColumnsMaxLengthStrategy>
+    <DrawTextWithGdiInterop>false</DrawTextWithGdiInterop>
+  </TableOptions>
+  <TopLevelGroupOptions>
+    <ShowGroupHeader>false</ShowGroupHeader>
+    <ShowGroupFooter>false</ShowGroupFooter>
+    <ShowFilterBar>false</ShowFilterBar>
+    <ShowGroupPreview>false</ShowGroupPreview>
+  </TopLevelGroupOptions>
+  <NestedTableGroupOptions>
+    <ShowFilterBar>true</ShowFilterBar>
+  </NestedTableGroupOptions>
+  <Appearance>
+    <ColumnHeaderCell>
+      <Interior>Solid; White</Interior>
+      <AutoSize>true</AutoSize>
+      <CellAppearance>Raised</CellAppearance>
+      <AutoFit>Both</AutoFit>
+      <ExclusiveChoiceList>true</ExclusiveChoiceList>
+      <AutoComplete>true</AutoComplete>
+    </ColumnHeaderCell>
+  </Appearance>
+  <GridOfficeScrollBars>Metro</GridOfficeScrollBars>
+</GridGroupingLookAndFeel>

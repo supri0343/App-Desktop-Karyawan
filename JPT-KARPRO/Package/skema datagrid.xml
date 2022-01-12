@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GridEngine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IsDynamicData>false</IsDynamicData>
+  <SortMappingNames>true</SortMappingNames>
+  <OptimizeIListGroupingPerformance>false</OptimizeIListGroupingPerformance>
+  <GroupDropArea>true</GroupDropArea>
+  <TableDescriptor>
+    <Name>Pagi</Name>
+    <ExpressionFields>
+      <ExpressionFieldDescriptor>
+        <Name>Expr 1</Name>
+        <FieldPropertyTypeString>System.String</FieldPropertyTypeString>
+        <Expression>[TANGGAL]=""</Expression>
+      </ExpressionFieldDescriptor>
+    </ExpressionFields>
+    <GroupedColumns>
+      <SortColumnDescriptor>
+        <Name>DEPARTEMENT</Name>
+        <SortDirection>Ascending</SortDirection>
+      </SortColumnDescriptor>
+    </GroupedColumns>
+    <PrimaryKeyColumns>
+      <SortColumnDescriptor>
+        <Name>NPK</Name>
+        <SortDirection>Ascending</SortDirection>
+      </SortColumnDescriptor>
+    </PrimaryKeyColumns>
+    <SortedColumns>
+      <SortColumnDescriptor>
+        <Name>TANGGAL</Name>
+        <SortDirection>Descending</SortDirection>
+      </SortColumnDescriptor>
+    </SortedColumns>
+    <AllowNew>false</AllowNew>
+    <AllowRemove>false</AllowRemove>
+    <AllowEdit>false</AllowEdit>
+    <Columns>
+      <GridColumnDescriptor>
+        <Width>116</Width>
+        <MappingName>TANGGAL</MappingName>
+        <AllowFilter>true</AllowFilter>
+        <AllowBlink>true</AllowBlink>
+      </GridColumnDescriptor>
+      <GridColumnDescriptor>
+        <MappingName>WAKTU</MappingName>
+      </GridColumnDescriptor>
+      <GridColumnDescriptor>
+        <MappingName>BARCODE</MappingName>
+      </GridColumnDescriptor>
+      <GridColumnDescriptor>
+        <MappingName>NPK</MappingName>
+      </GridColumnDescriptor>
+      <GridColumnDescriptor>
+        <MappingName>NAMA_KARYAWAN</MappingName>
+      </GridColumnDescriptor>
+      <GridColumnDescriptor>
+        <MappingName>DEPARTEMENT</MappingName>
+      </GridColumnDescriptor>
+    </Columns>
+    <ConditionalFormats>
+      <GridConditionalFormatDescriptor>
+        <Rules />
+        <Expression>[WAKTU]  LIKE ''</Expression>
+        <Name>ConditionalFormat 1</Name>
+        <Appearance>
+          <AnyRecordFieldCell>
+            <Interior>Solid; Crimson</Interior>
+            <TextColor>White</TextColor>
+            <Font>
+              <Bold>true</Bold>
+            </Font>
+            <BaseStyle>"BlinkNullValue"</BaseStyle>
+            <Description>"Finger Not Found"</Description>
+          </AnyRecordFieldCell>
+        </Appearance>
+      </GridConditionalFormatDescriptor>
+    </ConditionalFormats>
+    <Appearance>
+      <AnyCell>
+        <AutoFit>Both</AutoFit>
+      </AnyCell>
+      <ColumnHeaderCell>
+        <AutoSize>true</AutoSize>
+      </ColumnHeaderCell>
+    </Appearance>
+    <TopLevelGroupOptions>
+      <CaptionText>"{TableName}: {RecordCount} Finger"</CaptionText>
+    </TopLevelGroupOptions>
+    <TableOptions>
+      <RecordRowHeight>25</RecordRowHeight>
+      <CaptionRowHeight>29</CaptionRowHeight>
+      <ColumnHeaderRowHeight>25</ColumnHeaderRowHeight>
+      <DefaultColumnWidth>75</DefaultColumnWidth>
+    </TableOptions>
+  </TableDescriptor>
+  <Appearance>
+    <ColumnHeaderCell>
+      <Interior>Solid; White</Interior>
+      <AutoSize>true</AutoSize>
+      <CellAppearance>Raised</CellAppearance>
+      <AutoFit>Both</AutoFit>
+      <ExclusiveChoiceList>true</ExclusiveChoiceList>
+      <AutoComplete>true</AutoComplete>
+    </ColumnHeaderCell>
+  </Appearance>
+  <TopLevelGroupOptions>
+    <ShowGroupHeader>false</ShowGroupHeader>
+    <ShowGroupFooter>false</ShowGroupFooter>
+    <ShowFilterBar>false</ShowFilterBar>
+    <ShowGroupPreview>false</ShowGroupPreview>
+  </TopLevelGroupOptions>
+  <NestedTableGroupOptions>
+    <ShowFilterBar>true</ShowFilterBar>
+  </NestedTableGroupOptions>
+  <TableOptions>
+    <SelectionBackColor>Maroon</SelectionBackColor>
+    <SelectionTextColor>HighlightText</SelectionTextColor>
+    <ColumnsMaxLengthStrategy>None</ColumnsMaxLengthStrategy>
+    <DrawTextWithGdiInterop>false</DrawTextWithGdiInterop>
+  </TableOptions>
+  <BlinkTime>2</BlinkTime>
+</GridEngine>
